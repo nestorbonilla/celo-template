@@ -1,5 +1,6 @@
 node_modules/
 .expo/
+.expo-shared/
 npm-debug.*
 *.jks
 *.p8
@@ -9,5 +10,18 @@ npm-debug.*
 *.orig.*
 web-build/
 
-# macOS
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+artifacts*
+deployments
+.env
+
+# testing
+coverage
+
+# production
+build
+
+# misc
 .DS_Store
+.secret
+.env
