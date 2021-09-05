@@ -2,7 +2,12 @@
   "name": "celo-template",
   "version": "0.0.1",
   "description": "A Celo repo template that uses hardhat, expo and react-native, integrated with a set of deployment automation scripts.",
-  "keywords": ["celo", "react-native", "expo", "hardhat"],
+  "keywords": [
+    "celo",
+    "react-native",
+    "expo",
+    "hardhat"
+  ],
   "author": "Nestor Bonilla <nestor.bonilla.s@gmail.com>",
   "license": "MIT",
   "main": "node_modules/expo/AppEntry.js",
@@ -13,7 +18,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@celo-tools/use-contractkit": "^1.1.0",
@@ -46,12 +53,18 @@
     "@babel/core": "^7.9.0",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@react-native-community/eslint-config": "^3.0.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.5",
-    "hardhat": "^2.6.1"
+    "hardhat": "^2.6.1",
+    "prettier": "^2.3.2",
+    "prettier-config-solidity": "^1.5.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17"
   },
   "private": true
 }
